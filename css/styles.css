@@ -365,18 +365,17 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
+    margin-top: 0;
+    
     margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
+    
     
 }
 
 .projects .text {
     font-size: 16px;
     line-height: 1.88;
-    padding-left: 24px;
-    padding-right: 24px;
+    
     
 }
 
@@ -388,17 +387,17 @@ img {
 
 .description {
     
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     
 }
 
-.projects .item {
-    padding-bottom: 20px;
-    /* outline: 1px solid #EEEEEE;  */
-    
-    
-   
-}
+
 
 .footer {
     background-color: var(--footer-bg);
