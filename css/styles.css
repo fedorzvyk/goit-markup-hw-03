@@ -33,6 +33,7 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
+    /* width: 1600px; */
    }
 
    p {
@@ -58,7 +59,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -78,13 +79,20 @@ body {
     
   }
 
+  .main-nav {
+      display: flex;
+      align-items: center;
+     
+  }
   
 /* Site nav */
+
 .page-header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    outline: 1px solid #eeeeee;
 }
 
 .link-logo {
@@ -101,14 +109,30 @@ body {
 .logo-footer:hover, 
 .logo-footer:focus {
     
-    opacity: 0.7;
+    text-decoration: underline;
 }
 
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
 
+/* .site-nav .item, 
+.contact-nav .item {
+    
+    outline: 2px solid tomato;
+} */
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
 
 
 .site-nav .link {
     color: var(--title-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
 }
 
@@ -121,6 +145,23 @@ body {
 .footer .contact:focus,
 .accent     {
     color: var(--accent-color);
+}
+
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-nav .item + .item {
+    margin-left: 50px;
+
+}
+
+.contact-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
 }
 
   /* main */
@@ -149,6 +190,7 @@ body {
   
   .button {
     border-radius: 4px;
+    border-color: transparent;
     padding: 10px 32px;
     min-width: 200px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -172,6 +214,8 @@ body {
   }
   
   .button-secondary {
+    border-radius: 4px;
+    border-color: transparent;
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
@@ -181,6 +225,7 @@ body {
     cursor: pointer;
     color: var(--title-text-color);
     background-color: var(--secondary-bg);
+    padding: 6px 22px;
       
 }
 
@@ -189,6 +234,14 @@ body {
       color: var(--primary-white-color);
       background-color: var(--accent-color)
   }
+
+  .advantage {
+      display: flex;
+  }
+
+  .advantage .item:not(:last-child) {
+    margin-right: 30px;
+}
 
   .section {
       padding: 94px 0;
@@ -225,11 +278,18 @@ body {
     margin-bottom: 10px;
    }
 
-.section-title .text {
+.advantage .text {
     font-size: 14px;
     line-height: 1.71;
 }
 
+.work {
+    display: flex;
+}
+
+.work .item + .item {
+    margin-left: 30px;
+}
 
 
 .team {
@@ -237,7 +297,7 @@ body {
     
 }
 
-.team-list {
+.team-list .item {
     padding-bottom: 30px;
 }
 
@@ -257,7 +317,49 @@ body {
     text-align: center;
 }
 
+.team-list {
+    display: flex;
+    
+
+}
+
+.team-list .item {
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item + .item {
+    margin-left: 30px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter .item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .projects {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.projects .item:not(:nth-child(3n)) {
+    margin-right: 30px;
+    
+}
+
+.projects .item:nth-child(-n+6) {
+    margin-bottom: 30px;
+
+}
+
+.projects .title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -265,15 +367,26 @@ body {
     letter-spacing: 0.06em;
     margin-top: 20px;
     margin-bottom: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    
 }
 
 .projects .text {
     font-size: 16px;
     line-height: 1.88;
+    padding-left: 24px;
+    padding-right: 24px;
+    
+    
 }
 
-.card {
+.projects .item {
     padding-bottom: 20px;
+    outline: 1px solid #EEEEEE; 
+    
+    
+   
 }
 
 .footer {
@@ -284,6 +397,7 @@ body {
 }
 
 .contact-list {
+    margin-top: 20px;
     text-decoration: none;
     font-style: normal;
     text-decoration: inherit;
@@ -293,16 +407,25 @@ body {
         
     }
 
+    .contact-list .item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
 .logo-footer {
+    
+
     color: var(--primary-white-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    
+    
 }
 
 .footer .address {
+   
     color: var(--primary-white-color);
     text-decoration: none;
 }
