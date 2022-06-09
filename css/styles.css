@@ -92,7 +92,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    outline: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .link-logo {
@@ -378,12 +378,23 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     
+}
+
+img {
+    display: block;
+    margin-bottom: 0;
+}
+
+
+.description {
+    
+    border: 1px solid #EEEEEE;
     
 }
 
 .projects .item {
     padding-bottom: 20px;
-    outline: 1px solid #EEEEEE; 
+    /* outline: 1px solid #EEEEEE;  */
     
     
    
